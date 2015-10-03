@@ -48,7 +48,8 @@ class DetailViewController: UIViewController {
             attributeSet.title = detailItem.name
             attributeSet.contentDescription = detailItem.genre + "\n" + dateFormatter.stringFromDate(detailItem.time)
 
-            activity.becomeCurrent()
+            self.userActivity = activity
+            self.userActivity?.becomeCurrent()
         }
     }
 
